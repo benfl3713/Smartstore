@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  smartstore:
+    build:
+        context: ./src
+        dockerfile: "Dockerfile"
+    image: smartstore:latest
+    ports:
+      - "8886:80"
